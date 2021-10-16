@@ -29,7 +29,7 @@
                         <constraint firstAttribute="height" constant="50" id="nAR-Fx-F97"/>
                     </constraints>
                     <items>
-                        <tabBarItem title="Рестораны" id="Ebh-Ui-xqg"/>
+                        <tabBarItem title="Рестораны" image="cart" catalog="system" id="Ebh-Ui-xqg"/>
                         <tabBarItem title="Хиты" id="vk8-8b-Pm7"/>
                         <tabBarItem title="Отзывы" id="FXr-JK-TPy"/>
                     </items>
@@ -49,6 +49,7 @@
         </view>
     </objects>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
