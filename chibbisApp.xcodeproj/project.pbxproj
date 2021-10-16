@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BD4DB99739249C595E53656 /* Pods_chibbisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2B0EB408CD28CD82841E46 /* Pods_chibbisApp.framework */; };
 		83A7D93927195F440046F8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D93827195F440046F8EE /* AppDelegate.swift */; };
-		83A7D93B27195F440046F8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D93A27195F440046F8EE /* SceneDelegate.swift */; };
-		83A7D93D27195F440046F8EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D93C27195F440046F8EE /* ViewController.swift */; };
-		83A7D94027195F440046F8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A7D93E27195F440046F8EE /* Main.storyboard */; };
+		83A7D93D27195F440046F8EE /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D93C27195F440046F8EE /* TabbarViewController.swift */; };
 		83A7D94227195F450046F8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A7D94127195F450046F8EE /* Assets.xcassets */; };
 		83A7D94527195F450046F8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A7D94327195F450046F8EE /* LaunchScreen.storyboard */; };
+		83A7D954271967A40046F8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D953271967A40046F8EE /* SceneDelegate.swift */; };
+		83A7D95627196B840046F8EE /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A7D95527196B840046F8EE /* TabbarViewController.xib */; };
+		83A7D9582719702C0046F8EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D9572719702C0046F8EE /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24156EA99252A84DDCBFFEFD /* Pods-chibbisApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chibbisApp.release.xcconfig"; path = "Target Support Files/Pods-chibbisApp/Pods-chibbisApp.release.xcconfig"; sourceTree = "<group>"; };
 		83A7D93527195F440046F8EE /* chibbisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chibbisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A7D93827195F440046F8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83A7D93A27195F440046F8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83A7D93C27195F440046F8EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83A7D93F27195F440046F8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83A7D93C27195F440046F8EE /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		83A7D94127195F450046F8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A7D94427195F450046F8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83A7D94627195F450046F8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A7D953271967A40046F8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = chibbisApp/Internal/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
+		83A7D95527196B840046F8EE /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+		83A7D9572719702C0046F8EE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8A2B0EB408CD28CD82841E46 /* Pods_chibbisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chibbisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDF84E4A89D15E5F8AEBF61 /* Pods-chibbisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chibbisApp.debug.xcconfig"; path = "Target Support Files/Pods-chibbisApp/Pods-chibbisApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD4DB99739249C595E53656 /* Pods_chibbisApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06583D9C67CCCCF40532F766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B0EB408CD28CD82841E46 /* Pods_chibbisApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DCB7C9210D5C811F967014D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF84E4A89D15E5F8AEBF61 /* Pods-chibbisApp.debug.xcconfig */,
+				24156EA99252A84DDCBFFEFD /* Pods-chibbisApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		83A7D92C27195F430046F8EE = {
 			isa = PBXGroup;
 			children = (
 				83A7D93727195F440046F8EE /* chibbisApp */,
 				83A7D93627195F440046F8EE /* Products */,
+				5DCB7C9210D5C811F967014D /* Pods */,
+				06583D9C67CCCCF40532F766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +83,40 @@
 		83A7D93727195F440046F8EE /* chibbisApp */ = {
 			isa = PBXGroup;
 			children = (
-				83A7D93827195F440046F8EE /* AppDelegate.swift */,
-				83A7D93A27195F440046F8EE /* SceneDelegate.swift */,
-				83A7D93C27195F440046F8EE /* ViewController.swift */,
-				83A7D93E27195F440046F8EE /* Main.storyboard */,
-				83A7D94127195F450046F8EE /* Assets.xcassets */,
-				83A7D94327195F450046F8EE /* LaunchScreen.storyboard */,
 				83A7D94627195F450046F8EE /* Info.plist */,
+				83A7D94E27195F7A0046F8EE /* Internal */,
+				83A7D94D27195F6C0046F8EE /* TabbarVC */,
+				83A7D94C27195F5D0046F8EE /* Resources */,
 			);
 			path = chibbisApp;
+			sourceTree = "<group>";
+		};
+		83A7D94C27195F5D0046F8EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83A7D94127195F450046F8EE /* Assets.xcassets */,
+				83A7D94327195F450046F8EE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83A7D94D27195F6C0046F8EE /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				83A7D93C27195F440046F8EE /* TabbarViewController.swift */,
+				83A7D95527196B840046F8EE /* TabbarViewController.xib */,
+				83A7D9572719702C0046F8EE /* Router.swift */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		83A7D94E27195F7A0046F8EE /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				83A7D953271967A40046F8EE /* SceneDelegate.swift */,
+				83A7D93827195F440046F8EE /* AppDelegate.swift */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A7D94927195F450046F8EE /* Build configuration list for PBXNativeTarget "chibbisApp" */;
 			buildPhases = (
+				0BB33509120C89BA819D5DCB /* [CP] Check Pods Manifest.lock */,
 				83A7D93127195F440046F8EE /* Sources */,
 				83A7D93227195F440046F8EE /* Frameworks */,
 				83A7D93327195F440046F8EE /* Resources */,
+				5DE1408B3BF7FCEB153AD61E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +180,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A7D94527195F450046F8EE /* LaunchScreen.storyboard in Resources */,
+				83A7D95627196B840046F8EE /* TabbarViewController.xib in Resources */,
 				83A7D94227195F450046F8EE /* Assets.xcassets in Resources */,
-				83A7D94027195F440046F8EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB33509120C89BA819D5DCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chibbisApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE1408B3BF7FCEB153AD61E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chibbisApp/Pods-chibbisApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chibbisApp/Pods-chibbisApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chibbisApp/Pods-chibbisApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83A7D93127195F440046F8EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A7D93D27195F440046F8EE /* ViewController.swift in Sources */,
+				83A7D9582719702C0046F8EE /* Router.swift in Sources */,
+				83A7D93D27195F440046F8EE /* TabbarViewController.swift in Sources */,
 				83A7D93927195F440046F8EE /* AppDelegate.swift in Sources */,
-				83A7D93B27195F440046F8EE /* SceneDelegate.swift in Sources */,
+				83A7D954271967A40046F8EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83A7D93E27195F440046F8EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83A7D93F27195F440046F8EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83A7D94327195F450046F8EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +373,7 @@
 		};
 		83A7D94A27195F450046F8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FDF84E4A89D15E5F8AEBF61 /* Pods-chibbisApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +383,6 @@
 				INFOPLIST_FILE = chibbisApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +400,7 @@
 		};
 		83A7D94B27195F450046F8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24156EA99252A84DDCBFFEFD /* Pods-chibbisApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +410,6 @@
 				INFOPLIST_FILE = chibbisApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
