@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>chibbisAppTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>83A7D93427195F440046F8EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83B4213E271ACBF300916941</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarViewController" customModule="chibbisApp" customModuleProvider="target">
             <connections>
+                <outlet property="hitsItem" destination="vk8-8b-Pm7" id="jox-aD-GfD"/>
+                <outlet property="reviewsItem" destination="FXr-JK-TPy" id="Kef-bm-exa"/>
+                <outlet property="storeItem" destination="Ebh-Ui-xqg" id="rsk-HV-oFr"/>
+                <outlet property="tabBar" destination="imv-Xc-oyV" id="2b4-oa-blg"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TTW-Qr-g88"/>
             </connections>
         </placeholder>
@@ -17,8 +21,30 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imv-Xc-oyV">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nAR-Fx-F97"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Рестораны" id="Ebh-Ui-xqg"/>
+                        <tabBarItem title="Хиты" id="vk8-8b-Pm7"/>
+                        <tabBarItem title="Отзывы" id="FXr-JK-TPy"/>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ijs-Os-yzC"/>
+                    </connections>
+                </tabBar>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="imv-Xc-oyV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="KCH-AH-NRY"/>
+                <constraint firstItem="imv-Xc-oyV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KvV-E1-gqs"/>
+                <constraint firstItem="imv-Xc-oyV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bgJ-hK-y5V"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="132"/>
         </view>
     </objects>
