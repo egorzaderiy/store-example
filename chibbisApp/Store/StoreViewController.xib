@@ -31,9 +31,6 @@
                             <outlet property="delegate" destination="-1" id="x49-qU-SBY"/>
                         </connections>
                     </searchBar>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="dx4-2Y-2TA"/>
-                    </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

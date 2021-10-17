@@ -35,16 +35,16 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ImI-JJ-wtY">
-                        <rect key="frame" x="99" y="68.5" width="18" height="15"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbs-up-solid" translatesAutoresizingMaskIntoConstraints="NO" id="ImI-JJ-wtY">
+                        <rect key="frame" x="99" y="69" width="16" height="16"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ImI-JJ-wtY" secondAttribute="height" multiplier="1:1" id="fNe-8u-ZGx"/>
-                            <constraint firstAttribute="height" constant="18" id="ozr-07-n8E"/>
+                            <constraint firstAttribute="height" constant="16" id="ozr-07-n8E"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yc-SU-Cfb">
-                        <rect key="frame" x="125" y="68" width="33" height="16"/>
+                        <rect key="frame" x="123" y="69" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -78,7 +78,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="person.fill.checkmark" catalog="system" width="128" height="88"/>
+        <image name="thumbs-up-solid" width="512" height="512"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -8,8 +8,9 @@ import Foundation
 // MARK: - ReviewModelElement
 struct ReviewModelElement: Codable, EndpointRepresent {
     let isPositive: Bool
-    let message, dateAdded, userFIO, restaurantName: String
-
+    let message, userFIO, restaurantName: String
+    let dateAdded: Date
+    
     enum CodingKeys: String, CodingKey {
         case isPositive = "IsPositive"
         case message = "Message"

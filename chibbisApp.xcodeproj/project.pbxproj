@@ -32,6 +32,9 @@
 		83B42168271AF3D800916941 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42166271AF3D800916941 /* StoreCell.swift */; };
 		83B42169271AF3D800916941 /* StoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B42167271AF3D800916941 /* StoreCell.xib */; };
 		83B4216B271AF93400916941 /* GenericDataSource+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4216A271AF93400916941 /* GenericDataSource+Observable.swift */; };
+		83B4216D271C6B1500916941 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4216C271C6B1500916941 /* ReviewsViewModel.swift */; };
+		83B42171271C6C4300916941 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B42170271C6BD900916941 /* ReviewCell.xib */; };
+		83B42172271C6C4600916941 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4216F271C6BD900916941 /* ReviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		83B42166271AF3D800916941 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
 		83B42167271AF3D800916941 /* StoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCell.xib; sourceTree = "<group>"; };
 		83B4216A271AF93400916941 /* GenericDataSource+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenericDataSource+Observable.swift"; sourceTree = "<group>"; };
+		83B4216C271C6B1500916941 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
+		83B4216F271C6BD900916941 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		83B42170271C6BD900916941 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		8A2B0EB408CD28CD82841E46 /* Pods_chibbisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chibbisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDF84E4A89D15E5F8AEBF61 /* Pods-chibbisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chibbisApp.debug.xcconfig"; path = "Target Support Files/Pods-chibbisApp/Pods-chibbisApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,8 +226,10 @@
 		83B4214F271ACEFA00916941 /* Reviews */ = {
 			isa = PBXGroup;
 			children = (
+				83B4216E271C6BD300916941 /* Cell */,
 				83B42150271ACF1D00916941 /* ReviewsViewController.swift */,
 				83B42151271ACF1D00916941 /* ReviewsViewController.xib */,
+				83B4216C271C6B1500916941 /* ReviewsViewModel.swift */,
 				83B4215F271AE5E600916941 /* ReviewModel.swift */,
 			);
 			path = Reviews;
@@ -241,6 +249,15 @@
 			children = (
 				83B42166271AF3D800916941 /* StoreCell.swift */,
 				83B42167271AF3D800916941 /* StoreCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83B4216E271C6BD300916941 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83B4216F271C6BD900916941 /* ReviewCell.swift */,
+				83B42170271C6BD900916941 /* ReviewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -329,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B4214D271ACCD200916941 /* StoreViewController.xib in Resources */,
+				83B42171271C6C4300916941 /* ReviewCell.xib in Resources */,
 				83B42169271AF3D800916941 /* StoreCell.xib in Resources */,
 				83B42153271ACF1D00916941 /* ReviewsViewController.xib in Resources */,
 				83A7D94527195F450046F8EE /* LaunchScreen.storyboard in Resources */,
@@ -396,9 +414,11 @@
 			files = (
 				83B4215C271ADB0D00916941 /* APIService.swift in Sources */,
 				83B4214C271ACCD200916941 /* StoreViewController.swift in Sources */,
+				83B4216D271C6B1500916941 /* ReviewsViewModel.swift in Sources */,
 				83A7D9582719702C0046F8EE /* Router.swift in Sources */,
 				83B42168271AF3D800916941 /* StoreCell.swift in Sources */,
 				83B42164271AF13B00916941 /* StoreViewModel.swift in Sources */,
+				83B42172271C6C4600916941 /* ReviewCell.swift in Sources */,
 				83B4216B271AF93400916941 /* GenericDataSource+Observable.swift in Sources */,
 				83B42162271AE63000916941 /* HitModel.swift in Sources */,
 				83A7D93D27195F440046F8EE /* TabbarViewController.swift in Sources */,
