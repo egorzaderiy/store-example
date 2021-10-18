@@ -22,7 +22,6 @@
 		83B42152271ACF1D00916941 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42150271ACF1D00916941 /* ReviewsViewController.swift */; };
 		83B42153271ACF1D00916941 /* ReviewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B42151271ACF1D00916941 /* ReviewsViewController.xib */; };
 		83B42156271ACF2800916941 /* HitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42154271ACF2800916941 /* HitsViewController.swift */; };
-		83B42157271ACF2800916941 /* HitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B42155271ACF2800916941 /* HitsViewController.xib */; };
 		83B42159271AD2D200916941 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42158271AD2D200916941 /* PresenterProtocol.swift */; };
 		83B4215C271ADB0D00916941 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4215B271ADB0D00916941 /* APIService.swift */; };
 		83B4215E271ADE0F00916941 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4215D271ADE0F00916941 /* StoreModel.swift */; };
@@ -35,6 +34,8 @@
 		83B4216D271C6B1500916941 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4216C271C6B1500916941 /* ReviewsViewModel.swift */; };
 		83B42171271C6C4300916941 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B42170271C6BD900916941 /* ReviewCell.xib */; };
 		83B42172271C6C4600916941 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4216F271C6BD900916941 /* ReviewCell.swift */; };
+		83B42175271DE55B00916941 /* HitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42174271DE50300916941 /* HitCell.swift */; };
+		83B42177271DEABE00916941 /* HitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B42176271DEABE00916941 /* HitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		83B42150271ACF1D00916941 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 		83B42151271ACF1D00916941 /* ReviewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsViewController.xib; sourceTree = "<group>"; };
 		83B42154271ACF2800916941 /* HitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitsViewController.swift; sourceTree = "<group>"; };
-		83B42155271ACF2800916941 /* HitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitsViewController.xib; sourceTree = "<group>"; };
 		83B42158271AD2D200916941 /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		83B4215B271ADB0D00916941 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		83B4215D271ADE0F00916941 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		83B4216C271C6B1500916941 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
 		83B4216F271C6BD900916941 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		83B42170271C6BD900916941 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		83B42174271DE50300916941 /* HitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitCell.swift; sourceTree = "<group>"; };
+		83B42176271DEABE00916941 /* HitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitsViewModel.swift; sourceTree = "<group>"; };
 		8A2B0EB408CD28CD82841E46 /* Pods_chibbisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chibbisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDF84E4A89D15E5F8AEBF61 /* Pods-chibbisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chibbisApp.debug.xcconfig"; path = "Target Support Files/Pods-chibbisApp/Pods-chibbisApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,8 +218,9 @@
 		83B4214E271ACEF300916941 /* Hits */ = {
 			isa = PBXGroup;
 			children = (
+				83B42173271DE4F100916941 /* Cell */,
 				83B42154271ACF2800916941 /* HitsViewController.swift */,
-				83B42155271ACF2800916941 /* HitsViewController.xib */,
+				83B42176271DEABE00916941 /* HitsViewModel.swift */,
 				83B42161271AE63000916941 /* HitModel.swift */,
 			);
 			path = Hits;
@@ -258,6 +261,14 @@
 			children = (
 				83B4216F271C6BD900916941 /* ReviewCell.swift */,
 				83B42170271C6BD900916941 /* ReviewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83B42173271DE4F100916941 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83B42174271DE50300916941 /* HitCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -351,7 +362,6 @@
 				83B42153271ACF1D00916941 /* ReviewsViewController.xib in Resources */,
 				83A7D94527195F450046F8EE /* LaunchScreen.storyboard in Resources */,
 				83A7D95627196B840046F8EE /* TabbarViewController.xib in Resources */,
-				83B42157271ACF2800916941 /* HitsViewController.xib in Resources */,
 				83A7D94227195F450046F8EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +429,7 @@
 				83B42168271AF3D800916941 /* StoreCell.swift in Sources */,
 				83B42164271AF13B00916941 /* StoreViewModel.swift in Sources */,
 				83B42172271C6C4600916941 /* ReviewCell.swift in Sources */,
+				83B42175271DE55B00916941 /* HitCell.swift in Sources */,
 				83B4216B271AF93400916941 /* GenericDataSource+Observable.swift in Sources */,
 				83B42162271AE63000916941 /* HitModel.swift in Sources */,
 				83A7D93D27195F440046F8EE /* TabbarViewController.swift in Sources */,
@@ -426,6 +437,7 @@
 				83B42159271AD2D200916941 /* PresenterProtocol.swift in Sources */,
 				83B42152271ACF1D00916941 /* ReviewsViewController.swift in Sources */,
 				83B42156271ACF2800916941 /* HitsViewController.swift in Sources */,
+				83B42177271DEABE00916941 /* HitsViewModel.swift in Sources */,
 				83B42160271AE5E600916941 /* ReviewModel.swift in Sources */,
 				83A7D954271967A40046F8EE /* SceneDelegate.swift in Sources */,
 				83B4215E271ADE0F00916941 /* StoreModel.swift in Sources */,
@@ -514,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -593,6 +605,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,6 +633,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

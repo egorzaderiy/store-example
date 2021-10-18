@@ -15,7 +15,7 @@ class Router {
         return StoreViewController(nibName: "StoreViewController", bundle: nil)
     }()
     private static let hitsVC: HitsViewController = {
-        return HitsViewController(nibName: "HitsViewController", bundle: nil)
+        return HitsViewController()
     }()
     private static let reviewsVC: ReviewsViewController = {
         return ReviewsViewController(nibName: "ReviewsViewController", bundle: nil)

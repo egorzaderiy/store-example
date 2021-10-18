@@ -7,15 +7,22 @@ import Foundation
 
 // MARK: - HitModelElement
 struct HitModelElement: Codable, EndpointRepresent {
-    let isPositive: Bool
-    let message, dateAdded, userFIO, restaurantName: String
+    let productName: String
+    let productImage: String
+    let productPrice: Int
+    let productDescription: String
+    let restaurantID: Int
+    let restaurantName: String
+    let restaurantLogo: String
 
     enum CodingKeys: String, CodingKey {
-        case isPositive = "IsPositive"
-        case message = "Message"
-        case dateAdded = "DateAdded"
-        case userFIO = "UserFIO"
+        case productName = "ProductName"
+        case productImage = "ProductImage"
+        case productPrice = "ProductPrice"
+        case productDescription = "ProductDescription"
+        case restaurantID = "RestaurantId"
         case restaurantName = "RestaurantName"
+        case restaurantLogo = "RestaurantLogo"
     }
     
     static var endpointName: String { "hits" }

@@ -11,8 +11,6 @@ class ReviewsViewModel {
     
     weak var dataSource : GenericDataSource<ReviewModelElement>?
 
-    var originalModel: [ReviewModelElement] = []
-    
     init(dataSource : GenericDataSource<ReviewModelElement>?) {
         self.dataSource = dataSource
     }
@@ -56,7 +54,7 @@ class ReviewDataSource: GenericDataSource<ReviewModelElement>, UITableViewDataSo
         cell.reviewTextLabel.text = reviewModel.message
         
         cell.iconImageView.image = reviewModel.isPositive ? UIImage(named: "thumbs-up-solid") : UIImage(named: "thumbs-down-solid")
-
+        
         return cell
     }
 }
